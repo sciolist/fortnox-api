@@ -1,0 +1,12 @@
+{
+  "name": "fortnox-api",
+  "version": "0.0.1",
+  "description": "Fortnox.se v3 API integration",
+  "main": "index.js",
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "request": "~2.27.0"
+  },
+  "author": "Daniel Pihlstrom <daniel@flyday.se>",
+  "license": "BSD"
+}
