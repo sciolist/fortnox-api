@@ -1,5 +1,5 @@
 'use strict';
-module.exports = Fortnox;
+module.exports = exports = Fortnox;
 exports.create = Fortnox;
 
 function Fortnox(config) {
