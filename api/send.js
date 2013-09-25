@@ -25,8 +25,6 @@ module.exports = function (api) {
     if(opts.body) opts.body = format.params(opts.body);
     if(opts.qs) opts.qs = format.params(opts.qs);
 
-    console.log(opts);
-
     request[method](_.defaults(opts, this.defaults), function (err, r, body) {
       err = createError(err, body);
       cb(err, r, body);
