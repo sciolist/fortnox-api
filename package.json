@@ -2,6 +2,10 @@
   "name": "fortnox-api",
   "version": "0.0.4",
   "description": "Fortnox.se v3 API integration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sciolist/fortnox-api.git"
+  },
   "main": "index.js",
   "dependencies": {
     "underscore": "~1.5.2",
