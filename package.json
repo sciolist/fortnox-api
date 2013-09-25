@@ -1,6 +1,6 @@
 {
   "name": "fortnox-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Fortnox.se v3 API integration",
   "main": "index.js",
   "dependencies": {
