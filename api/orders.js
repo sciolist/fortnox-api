@@ -20,6 +20,14 @@ module.exports = function (api) {
       cb(null, body);
     });
   }
+
+  api.orders.createInvoice = function createInvoice(id, cb) {
+    var data = { url: 'orders/' + escape(id) + '/createinvoice' };
+    api.send.put(data, function (err, r, body) {
+      if(err) return cb(err);
+      cb(null, body);
+    });
+  }
 }
 
 
