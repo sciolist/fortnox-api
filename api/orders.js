@@ -17,7 +17,7 @@ module.exports = function (api) {
     var data = { url: 'orders', body: opts };
     api.send.post(data, function (err, r, body) {
       if(err) return cb(err);
-      return body;
+      cb(null, body);
     });
   }
 }
