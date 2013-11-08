@@ -6,16 +6,13 @@ var _ = require('underscore');
 module.exports = function (api) {
   function createError(error, body) {
     if(error) return error;
-    else if(body.ErrorInformation) {
-      error = new Error(body.ErrorInformation.Code + ' ' + body.ErrorInformation.Message);
-      error.code = body.ErrorInformation.Code;
-      error.body = body.ErrorInformation;
-      return error;
+    if(body.ErrorInformation) {
+      body.error = body.ErrorInformation;
     }
-    else if(body.error) {
-      error = new Error(body.code + ' ' + body.message);
-      error.code = body.code;
-      error.body = body;
+    if(body.error) {
+      error = new Error(body.error.code + ' ' + body.error.message);
+      error.code = body.error.code;
+      error.body = body.error;
       return error;
     }
   }
