@@ -1,6 +1,6 @@
 {
   "name": "fortnox-api",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Fortnox.se v3 API integration",
   "repository": {
     "type": "git",
