@@ -4,7 +4,7 @@ exports.create = Fortnox;
 
 function Fortnox(config) {
   if(!(this instanceof Fortnox)) { return new Fortnox(config); }
-  this.url = config.url || 'https://api-acce-next.fortnox.se/api';
+  this.url = config.url || 'https://api-acce-next.fortnox.se/';
   if(this.url[this.url.length - 1] !== '/') { this.url += '/'; }
 
   this.defaults = {
